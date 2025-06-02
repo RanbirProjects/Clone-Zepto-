@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-sm p-6;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-primary transition-colors;
+  }
+}
+
+/* Custom styles */
+.text-primary {
+  color: #00A5CF;
+}
+
+.text-secondary {
+  color: #FF6B6B;
+}
+
+.bg-background {
+  background-color: #F7F7F7;
+}
+
+.text-text {
+  color: #333333;
+}
+
+/* Hover effects */
+.hover\:text-primary:hover {
+  color: #00A5CF;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Custom styles that can't be handled by Tailwind */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
